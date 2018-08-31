@@ -1,0 +1,9 @@
+group 'cz.cvut.fit'
+version '3.0.0'
+
+apply from: "$rootDir/config.gradle"
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.11'
+}

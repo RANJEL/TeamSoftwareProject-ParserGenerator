@@ -1,0 +1,10 @@
+$ java -jar xhtmlParser.jar  test.xhtml Oracle 'sp_16_valenta/SkoL.!@oracle.fit.cvut.cz:1521/ORACLE'
+
+- Analogicky pro jine dtb, viz Programatorska prirucka..
+
+=>
+Vypise informaci o uspesnem ulozeni, lze zkontrolovat, ze bylo ulozeno do dtb:
+Lis 30, 2016 6:16:29 ODP. parser.model.dao.AbstractDao prepareSqlScript
+INFO: INSERT INTO FEMALE (HEIGHT) VALUES ('163')
+Lis 30, 2016 6:16:29 ODP. parser.model.dao.AbstractDao prepareSqlScript
+INFO: INSERT INTO MALE (EYE) VALUES ('2')

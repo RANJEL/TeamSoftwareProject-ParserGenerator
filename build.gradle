@@ -5,19 +5,23 @@ apply from: "$rootDir/config.gradle"
 
 task createJar(type: Jar) {
     manifest {
-        attributes 'Implementation-Title': 'Application Parser',
+        attributes 'Implementation-Title': 'Parsers generator for parsering data from structured document',
                 'Implementation-Version': version,
-                'Main-Class': 'parser.GeneratedParser'
+                'Main-Class': 'generator.Generator'
     }
     baseName = project.name
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
 
+artifacts {
+    archives createJar
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(path: ':parsermodel')
+    compile ('commons-io:commons-io:2.5')
     compile 'com.google.code.findbugs:jsr305:3.0.1'
     testCompile 'junit:junit:4.11'
-    testCompile 'com.mockrunner:mockrunner-jdbc:1.1.0'
 }

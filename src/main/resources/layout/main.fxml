@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="520.0" minWidth="600.0" prefHeight="520.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="generator.controller.MainController">
+    <children>
+        <HBox layoutX="70.0" layoutY="100.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <TreeView maxHeight="1.7976931348623157E308" minHeight="300.0" minWidth="200.0" prefWidth="800.0" fx:id="xhtmlView" />
+                <VBox minHeight="300.0" minWidth="180.0" prefHeight="520.0">
+                    <children>
+                        <CheckBox fx:id="chbSelect" mnemonicParsing="false" text="Přidat data do výběru">
+                            <padding>
+                                <Insets bottom="5.0" />
+                            </padding>
+                        </CheckBox>
+                        <VBox fx:id="vbSelect" prefHeight="140.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="lblTableName" text="Název tabulky:" />
+                                <TextField fx:id="txtTableName" maxWidth="1.7976931348623157E308">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <Label fx:id="lblColumnName" text="Název sloupce:" />
+                                <TextField fx:id="txtColumnName" maxWidth="1.7976931348623157E308">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <Label fx:id="lblDataType" text="Typ dat:" />
+                                <ComboBox fx:id="cmbDataTypes" maxWidth="1.7976931348623157E308" promptText="Vyber typ dat" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_LEFT" maxHeight="1.7976931348623157E308" prefHeight="600.0" prefWidth="200.0">
+                            <children>
+                                <HBox prefHeight="40.0" prefWidth="170.0">
+                                    <children>
+                                        <CheckBox fx:id="chbURLInput" mnemonicParsing="false" prefHeight="37.0" prefWidth="167.0" text="URL vstup" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="47.0" prefWidth="170.0">
+                                    <children>
+                                        <Button fx:id="btnOpen" minHeight="25.0" minWidth="80.0" mnemonicParsing="false" onAction="#btnOpenClick" prefHeight="34.0" prefWidth="200.0" text="Vybrat soubor" />
+                                    </children>
+                                </HBox>
+                        <HBox prefHeight="75.0" prefWidth="170.0">
+                           <children>
+                              <VBox prefHeight="78.0" prefWidth="170.0">
+                                 <children>
+                                    <Label fx:id="lblXPathString" text="XPath řetězec:" />
+                                    <TextField fx:id="txtXPathString" disable="true" editable="false" maxWidth="1.7976931348623157E308" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                                <HBox prefHeight="32.0" prefWidth="170.0">
+                                    <children>
+                                        <CheckBox fx:id="chbCompile" mnemonicParsing="false" prefHeight="25.0" prefWidth="171.0" text="Zkompilovat" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="32.0" prefWidth="200.0">
+                                    <children>
+                                        <Button fx:id="btnGenerate" minHeight="25.0" minWidth="72.0" mnemonicParsing="false" onAction="#btnGenerateClick" prefHeight="57.0" prefWidth="170.0" text="Vygenerovat generator" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

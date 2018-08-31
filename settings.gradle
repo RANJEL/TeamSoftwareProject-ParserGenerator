@@ -1,3 +1,2 @@
-rootProject.name = 'parser'
+rootProject.name = 'generator'
 include 'parsermodel'
-

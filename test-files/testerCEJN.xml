@@ -1,0 +1,48 @@
+<A>
+	<B>
+		<C>
+			<D>data1</D>
+			<D>data2</D>
+		</C>
+		<C>
+			<D>data3</D>
+			<E>
+				<D>data4</D>
+			</E>
+		</C>
+		<C>
+			<D>data1Duplicity</D>
+			<D>data2Duplicity</D>
+		</C>
+		<C>
+			<D>data5</D>
+		</C>
+		<C>
+			<D>
+				<D>
+				dataX
+				</D>
+			</D>
+		</C>
+	</B>
+	<B2>
+		<C>data6</C>
+	</B2>
+	<B>
+		<C>data7</C>
+	</B>
+</A>
+<C>data8</C>
+<A>
+	<B>
+		<C>
+			<E>
+				<D>data9</D>
+				<D>data10</D>
+			</E>
+			<E>
+				<D>data11</D>
+			</E>
+		</C>
+	</B>
+</A>
