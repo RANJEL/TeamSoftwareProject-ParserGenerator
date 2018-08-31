@@ -37,14 +37,17 @@ Aplikace obsahuje uživatelské rozhraní.
 Pro správný a bezproblémový běh programu je nutné mít nainstalovanou Javu ve verzi JDK 1.8. Pro bližší informace následujte prosím do složky [ParserGenerator/documentation](https://gitlab.fit.cvut.cz/ParserGenerator/documentation/blob/master/Instala%C4%8Dn%C3%AD_a_Program%C3%A1torsk%C3%A1_p%C5%99%C3%ADru%C4%8Dka.pdf), kde se nachází v souboru s názvem "Instalační a Programátorská příručka" bližší informace k instalaci.
 
 
-### Stažení projektu
-Pro stažení aktuálního releasu generátoru je potřeba na GitLabu jit do záložky [Tag](https://gitlab.fit.cvut.cz/ParserGenerator/generator/tags),  kde můžeme stáhnout aktuálně vydanou verzi.
+### Build
+Jako build tool jsme použili nástroj Gradle. Pro build zadejte příkaz
+```
+gradlew createJar 
+```
 
 ### Spuštění
-Pro spustění stačí jít přes příkazový řádek do stažené složky a napsat do příkazového řádku
+Pro spustění stačí napsat do příkazového řádku
 
 ```
-java -jar "Parser.jar" 
+java -jar build/libs/generator-3.0.0.jar
 ```
 
 Tímto spustíme GUI verzi programu.
