@@ -14,7 +14,8 @@ Then specific parser is generated. You can run it on the background, that will c
 
 See documentation/Uživatelská příručka.pdf
 
-https://www.youtube.com/watch?v=B6qu9mrTFNw&feature=youtu.be
+See generation of parser walkthrough: https://www.youtube.com/watch?v=B6qu9mrTFNw&feature=youtu.be
+or documentation/GenerationOfParserWalkthrough.mp4
 
 For more information navigate to folder documentation.
 
