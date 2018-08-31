@@ -1,0 +1,11 @@
+# Netbeans project files
+nbproject/
+build/
+dist/
+
+# IntelliJ project files
+.idea
+.gradle
+*.iml
+build
+parsermodel/build/
